@@ -1,0 +1,10 @@
+c:\users\wsan\LCProblem\LCProblem\obj\Debug\LCProblem.csproj.CoreCompileInputs.cache
+c:\users\wsan\LCProblem\LCProblem\bin\Debug\LCProblem.exe.config
+c:\users\wsan\LCProblem\LCProblem\bin\Debug\LCProblem.exe
+c:\users\wsan\LCProblem\LCProblem\bin\Debug\LCProblem.pdb
+c:\users\wsan\LCProblem\LCProblem\obj\Debug\LCProblem.exe
+c:\users\wsan\LCProblem\LCProblem\obj\Debug\LCProblem.pdb
+c:\users\wsan\LCProblem\LCProblem\obj\Debug\LCProblem.csprojResolveAssemblyReference.cache
+c:\users\wsan\LCProblem\LCProblem\bin\Debug\DataStructures.dll
+c:\users\wsan\LCProblem\LCProblem\bin\Debug\DataStructures.pdb
+c:\users\wsan\LCProblem\LCProblem\obj\Debug\LCProblem.csproj.CopyComplete
