@@ -20,6 +20,7 @@ namespace SolutionTests
             int[] actual = sol.TwoSum(nums, target);
             Assert.IsTrue(expected.SequenceEqual(actual));
         }
+        [TestMethod]
         public void TestAddTwoNumbers()
         {
             ListNode l1 = new ListNode(2);
@@ -34,8 +35,49 @@ namespace SolutionTests
             start = start.next;
             start.next = new ListNode(4);
             start = start.next;
+            ListNode expected = new ListNode(7);
+            start = expected;
+            start.next = new ListNode(0);
+            start = start.next;
+            start.next = new ListNode(8);
+            start = start.next;
             Solution sol = new Solution();
             ListNode Ans = sol.AddTwoNumbers(l1, l2);
+            bool notEqual = false;
+            for (int i = 1; i < 3; i++)
+            {
+                if (expected.val != Ans.val)
+                {
+                    notEqual = true;
+                }
+                expected = expected.next;
+                Ans = Ans.next;
+            }
+            Assert.AreEqual(notEqual, false);
+        }
+        [TestMethod]
+        public void TestLengthOfLongestSubstring()
+        {
+            string s = "dvdf";
+            int expected = 3;
+            // Act
+            Solution sol = new Solution();
+            // Assert
+            int actual = sol.LengthOfLongestSubstring(s);
+            Assert.AreEqual(actual, expected);
+        }
+        [TestMethod]
+        public void TestFindMedianSortedArrays()
+        {
+            int[] nums1 = new int[0];
+            int[] nums2 = new int[1];
+            nums2[0] = 1;
+            double expected = 2.5;
+            // Act
+            Solution sol = new Solution();
+            // Assert
+            double actual = sol.FindMedianSortedArrays(nums1, nums2);
+            Assert.AreEqual(actual, expected);
         }
     }
 }

@@ -1,6 +1,6 @@
-c:\users\wsan\LCProblem\DataStructures\bin\Debug\DataStructures.dll
-c:\users\wsan\LCProblem\DataStructures\bin\Debug\DataStructures.pdb
-c:\users\wsan\LCProblem\DataStructures\obj\Debug\DataStructures.csprojResolveAssemblyReference.cache
-c:\users\wsan\LCProblem\DataStructures\obj\Debug\DataStructures.csproj.CoreCompileInputs.cache
-c:\users\wsan\LCProblem\DataStructures\obj\Debug\DataStructures.dll
-c:\users\wsan\LCProblem\DataStructures\obj\Debug\DataStructures.pdb
+C:\Users\wsan\LCProblem\DataStructures\bin\Debug\DataStructures.dll
+C:\Users\wsan\LCProblem\DataStructures\bin\Debug\DataStructures.pdb
+C:\Users\wsan\LCProblem\DataStructures\obj\Debug\DataStructures.csprojAssemblyReference.cache
+C:\Users\wsan\LCProblem\DataStructures\obj\Debug\DataStructures.csproj.CoreCompileInputs.cache
+C:\Users\wsan\LCProblem\DataStructures\obj\Debug\DataStructures.dll
+C:\Users\wsan\LCProblem\DataStructures\obj\Debug\DataStructures.pdb
