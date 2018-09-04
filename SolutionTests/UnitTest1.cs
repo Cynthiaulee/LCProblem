@@ -64,7 +64,7 @@ namespace SolutionTests
             Solution sol = new Solution();
             // Assert
             int actual = sol.LengthOfLongestSubstring(s);
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
         [TestMethod]
         public void TestFindMedianSortedArrays()
@@ -77,18 +77,30 @@ namespace SolutionTests
             Solution sol = new Solution();
             // Assert
             double actual = sol.FindMedianSortedArrays(nums1, nums2);
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
         [TestMethod]
         public void TestLongestPalindrome()
         {
-            string s = "ababacc";
-            string expected = "ababa";
+            string s = "a";
+            string expected = "a";
             // Act
             Solution sol = new Solution();
             // Assert
             string actual = sol.LongestPalindrome(s);
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void TestConvert()
+        {
+            string s = "PAYPALISHIRING";
+            string expected = "PINALSIGYAHRPI";
+            //string expected = "A";
+            // Act
+            Solution sol = new Solution();
+            // Assert
+            string actual = sol.Convert(s, 4);
+            Assert.AreEqual(expected, actual);
         }
     }
 }

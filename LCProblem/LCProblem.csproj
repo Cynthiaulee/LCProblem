@@ -39,6 +39,7 @@
     <Compile Include="LengthOfLongestSubstring.cs" />
     <Compile Include="AddTwoNumbers.cs" />
     <Compile Include="LongestPalindrome.cs" />
+    <Compile Include="Convert.cs" />
     <Compile Include="TwoSum.cs" />
     <Compile Include="Solution.cs" />
   </ItemGroup>

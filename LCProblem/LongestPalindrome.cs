@@ -17,17 +17,47 @@ namespace LCProblem
             // Input: "babad"
             // Output: "bab"
             // Note: "aba" is also a valid answer.
+            //IDictionary<char, int> charDict = new Dictionary<char, int>();
+            //int idx = 1;
+            //for (int i = 0; i < lenS; i++)
+            //{
+            //    if (!charDict.ContainsKey(s[i])){
+            //        charDict[s[i]] = idx;
+            //        idx++;
+            //    }
+            //}
             int lenS = s.Length;
-            IDictionary<char, int> charDict = new Dictionary<char, int>();
-            int idx = 1;
+            int subStart = 0;
+            int subEnd = 0;
+            int maxLen = 0;
+            int maxStart = 0;
             for (int i = 0; i < lenS; i++)
             {
-                if (!charDict.ContainsKey(s[i])){
-                    charDict[s[i]] = idx;
-                    idx++;
+                if ((lenS - i) < maxLen)
+                {
+                    continue;
+                }
+                for (int j = 0; j < lenS; j++)
+                {
+                    subStart = i;
+                    subEnd = lenS - j - 1;
+                    if ((subEnd - subStart) < maxLen)
+                    {
+                        continue;
+                    }
+                    while ((subStart <= subEnd)&&s[subStart] == s[subEnd])
+                    {
+                        subStart++;
+                        subEnd--;
+                    }
+                    if (((subEnd - subStart) <= 0) && ((lenS - i - j) > maxLen))
+                    {
+                        maxLen = lenS - i - j;
+                        maxStart = i; 
+                    }
                 }
             }
-            return "ababa";
+            return s.Substring(maxStart, maxLen);
         }
     }
 }
