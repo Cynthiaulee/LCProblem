@@ -72,11 +72,22 @@ namespace SolutionTests
             int[] nums1 = new int[0];
             int[] nums2 = new int[1];
             nums2[0] = 1;
-            double expected = 2.5;
+            double expected = 1;
             // Act
             Solution sol = new Solution();
             // Assert
             double actual = sol.FindMedianSortedArrays(nums1, nums2);
+            Assert.AreEqual(actual, expected);
+        }
+        [TestMethod]
+        public void TestLongestPalindrome()
+        {
+            string s = "ababacc";
+            string expected = "ababa";
+            // Act
+            Solution sol = new Solution();
+            // Assert
+            string actual = sol.LongestPalindrome(s);
             Assert.AreEqual(actual, expected);
         }
     }
